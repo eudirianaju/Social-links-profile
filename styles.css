@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+}
+
+
+
+:root {
+    --sub: hsl(275, 100%, 50%);
+    --hover: hsl(268, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsla(0, 0%, 40%, 0.466);
+    --darkgrey: hsla(0, 0%, 19%, 0.531);
+    --black: hsl(0, 0%, 8%);
+    --title: 27px;
+    --paragraph: 16px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkgrey);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 28rem;
+    padding: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 1px solid #4c4c4c48;
+}
+
+
+
+img {
+    width: 110px;
+    border-radius: 50%;
+}
+
+
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: var(--title);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--sub);
+    font-size: var(--paragraph);
+    font-weight: 600;
+    margin-bottom: 25px;
+
+}
+
+p {
+    color: var(--white);
+    font-size: var(--paragraph);
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+button {
+    cursor: pointer;
+    font-size: 18px;
+    width: 20rem;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--grey);
+    border: none;
+    color: var(--white);
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
+
+button:hover {
+    background-color: var(--hover);
+    color: var(--white);
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    img {
+        width: 90px;
+    }
+
+    h1 {
+        font-size: 25px
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px
+    }
+
+    button {
+        width: 18rem;
+
+    }
+}
